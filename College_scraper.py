@@ -8,6 +8,7 @@ url = "https://www.ymgrad.com/search/United%20States"
 response = requests.get(url)
 
 # Check if the request was successful
+
 if response.status_code == 200:
     # Parse the HTML content using BeautifulSoup
     soup = BeautifulSoup(response.content, "html.parser")
